@@ -124,7 +124,6 @@ class ProductManager {
             })
 
             if(exito){
-                console.log("Producto encontrado")
                 return this.products[index]
 
             }else{

@@ -21,7 +21,7 @@ app.get("/products", async (request, response) => {
 
   if (numLimit) {
     let consultLimit = [];
-    for (let i = 0; i < numLimit; i++) {
+    for (let i = 0; i < numLimit && i < consultasArch.length ; i++) {
       consultLimit.push(consultasArch[i]);
     }
     response.send(consultLimit);
